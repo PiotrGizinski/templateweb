@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #363636;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+}
+
+body .preloader-wrapper {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    animation: example 0.5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+body .preloader-wrapper .preloader {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+@keyframes example {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0.1em;
+    width: 100%;
+    z-index: 6;
+}
+
+header nav {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #eea03a;
+    opacity: 0.95;
+    padding: 0.5rem;
+    border-top: 1.5px solid #363636;
+    border-bottom: 1.5px solid #363636;
+}
+
+header nav a, a:visited {
+    text-decoration: none;
+    padding: 0.8rem;
+    border-style: solid;
+    border-width: 0.1em 2px;
+    border-color: transparent;
+    color: #271d1d;
+}
+
+header nav .active, a:hover {
+    transition: 0.6s;
+    border-color: #e9d3b2 #363636;   
+    background-color: #e9d3b2;
+}
+
+main {
+    margin: 0 auto 3em auto;
+    width: 85%;
+    border-width: 0 4px 4px 4px;
+    border-style: double; 
+    border-color: #363636;
+    border-radius: 0 0 30px 30px;
+    background-color: #e9d3b2;
+}
+
+main .container {
+    padding: 0.5em;
+    padding-top: 3em;
+    width: 100%;
+}
+
+main .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+main .container .row .card {
+    margin: 0 0.2em;
+    padding: 1.5em;
+    background-color: #e9d3b2;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+    main .container .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav {
+
+    }
+}
+
+footer {
+    z-index: 6;
+    position: fixed;
+    bottom: 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #db8b12;
+    border-bottom: 1.5px solid #363636;
+    border-top: 1.5px solid #363636;
+    opacity: 0.95;
+}
+
+footer p {
+    text-align: center;
+}

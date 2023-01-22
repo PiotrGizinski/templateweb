@@ -1,0 +1,9 @@
+main .container .row .card {
+    height: 80vh;
+}
+
+main .container .row .card .image {    
+    width: 100%;
+    position: relative;
+    border: 2px solid #000;
+}
